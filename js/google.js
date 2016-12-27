@@ -94,20 +94,8 @@ function initMap() {
         zoomControl: false
       });
   map.setStreetView(panorama);
-
-  // var gps = new google.maps.Map(document.getElementById('gps'), {
-  //   center: {lat: 35.6585957, lng: 139.7451379},
-  //   zoom: 17,
-  //   mapTypeControl: false,
-  //   zoomControl: false
-  // });
-  // var marker = new google.maps.Marker({
-  //   position: {lat: 35.6585957, lng: 139.7451379},
-  //   map: gps,
-  //   draggable: true,
-  //   animation: google.maps.Animation.DROP
-  // });
 }
+
 function handleLocationError(browserHasGeolocation, infoWindow, pos) {
   infoWindow.setPosition(pos);
   infoWindow.setContent(browserHasGeolocation ?
