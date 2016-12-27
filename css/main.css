@@ -8,18 +8,25 @@
     height: 100vh;
     background: linear-gradient(180deg, transparent, rgba(52, 53, 84, 0.6)); }
     .intro .intro-bg nav {
-      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      position: relative;
+      height: 10vh; }
       .intro .intro-bg nav #logo {
-        margin: 40px 0;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
         font-size: 25px;
         float: left;
         text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3), -5px 5px 10px rgba(0, 0, 0, 0.3);
         color: #42ffef; }
       .intro .intro-bg nav .navs {
-        float: right; }
+        right: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%); }
         .intro .intro-bg nav .navs li {
           font-size: 15px;
-          margin: 40px 20px 40px 0;
           padding: 10px 15px;
           display: inline-block;
           text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
@@ -32,47 +39,51 @@
             border-radius: 15px;
             box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); }
     .intro .intro-bg .phone-view {
-      height: 700px;
+      height: 75vh;
       position: relative; }
       .intro .intro-bg .phone-view .iphone {
-        position: absolute;
         width: 100%;
-        height: 100%;
-        top: 0;
-        background-image: url("../img/iphone-black.png");
-        background-repeat: no-repeat;
-        background-size: 22% auto;
-        background-position: center center; }
-        .intro .intro-bg .phone-view .iphone img {
-          width: 225px;
-          height: 395px;
+        height: 100%; }
+        .intro .intro-bg .phone-view .iphone .youtube {
           position: absolute;
-          display: inline;
           top: 50%;
           left: 50%;
+          width: 30vh;
+          height: 63vh;
+          background-image: url("../img/iphone-black.png");
+          background-repeat: no-repeat;
+          background-size: 100% auto;
+          background-position: center center;
           transform: translate(-50%, -50%); }
+          .intro .intro-bg .phone-view .iphone .youtube img {
+            position: absolute;
+            width: 88%;
+            height: 74%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); }
       .intro .intro-bg .phone-view .title {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 100%; }
+        width: 100%;
+        text-align: center; }
         .intro .intro-bg .phone-view .title h1 {
           font-size: 80px;
-          font-weight: bold;
           color: #fff;
           text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3), -5px 5px 10px rgba(0, 0, 0, 0.3); }
     .intro .intro-bg .learn-more {
+      height: 15vh;
       text-align: center; }
       .intro .intro-bg .learn-more p {
-        display: inline;
         padding: 10px 30px;
-        width: 200px;
         font-size: 30px;
         border: 4px solid #FFF;
         border-radius: 25px;
-        color: #FFF;
-        letter-spacing: 5px; }
+        color: #fff;
+        letter-spacing: 5px;
+        display: inline-block; }
         .intro .intro-bg .learn-more p:hover {
           color: #42ffef;
           border-color: #42ffef;
@@ -83,12 +94,18 @@
   width: 100vw;
   height: 100vh;
   background-color: #343554; }
+  .everywhere #map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
   .everywhere .iphone-gps {
     position: absolute;
     bottom: 6%;
     left: 9%;
-    width: 250px;
-    height: 525px;
+    width: 25vh;
+    height: 52.5vh;
     background-image: url("../img/iphone.png");
     background-repeat: no-repeat;
     background-size: 100% auto;
@@ -104,8 +121,8 @@
     position: absolute;
     bottom: 5%;
     left: 20%;
-    width: 300px;
-    height: 630px;
+    width: 30vh;
+    height: 63vh;
     background-image: url("../img/iphone.png");
     background-repeat: no-repeat;
     background-size: 100% auto;
@@ -130,14 +147,15 @@
       .everywhere .text .title h1 {
         font-weight: bold;
         font-size: 80px;
-        padding: 100px; }
+        padding: 100px 0 10px 0; }
     .everywhere .text .slogan {
       font-weight: bold;
       font-size: 50px;
       padding: 150px 0 0 0; }
     .everywhere .text .tag {
       font-size: 30px;
-      padding: 10px 0; }
+      padding: 10px 0;
+      color: #42ffef; }
 
 .beats {
   background-image: url("../img/running.jpg");
@@ -153,13 +171,99 @@
       .beats .beats-bg .title h1 {
         font-weight: bold;
         font-size: 80px;
-        padding: 100px; }
+        padding: 100px 0 10px 0; }
     .beats .beats-bg .slogan {
       font-weight: bold;
       font-size: 50px;
       padding: 150px 0 0 0; }
     .beats .beats-bg .tag {
       font-size: 30px;
-      padding: 10px 0; }
+      padding: 10px 0;
+      color: #42ffef; }
+
+.marathons {
+  background-color: rgba(0, 0, 0, 0.9);
+  background-image: url("../img/map.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center 60%;
+  width: 100vw;
+  height: 110vh; }
+  .marathons .title {
+    text-align: center;
+    color: #fff;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3), -5px 5px 10px rgba(0, 0, 0, 0.3); }
+    .marathons .title h1 {
+      font-weight: bold;
+      font-size: 80px;
+      padding: 100px 0 50px 0; }
+  .marathons .photos {
+    padding: 0; }
+    .marathons .photos .marathon {
+      margin: 10px 0;
+      position: relative; }
+      .marathons .photos .marathon img {
+        width: 100%;
+        height: 100%; }
+      .marathons .photos .marathon .cover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(52, 53, 84, 0.6);
+        opacity: 0; }
+        .marathons .photos .marathon .cover h3 {
+          margin: 0;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 40px;
+          color: #42ffef; }
+        .marathons .photos .marathon .cover:hover {
+          opacity: 1; }
+
+.contact {
+  background-image: url("../img/join.jpg"); }
+  .contact .bg {
+    width: 100vw;
+    height: 90vh;
+    background-color: rgba(0, 0, 0, 0.4); }
+  .contact .title {
+    text-align: center;
+    color: #fff;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3), -5px 5px 10px rgba(0, 0, 0, 0.3); }
+    .contact .title h1 {
+      font-weight: bold;
+      font-size: 80px;
+      padding: 100px 0 20px 0; }
+    .contact .title p {
+      font-size: 30px;
+      padding: 20px 0;
+      color: #42ffef; }
+  .contact .action {
+    margin: 10px;
+    padding: 12px 20px;
+    text-align: center; }
+    .contact .action input {
+      text-align: center;
+      color: #000000;
+      text-indent: 5px;
+      background: #FFFFFF;
+      font-size: 20px;
+      padding: 8px;
+      width: 50%;
+      background-color: #FFFFFF;
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset, 0px 2px 5px rgba(0, 0, 0, 0.3);
+      margin: 0 auto 30px; }
+    .contact .action .signupButton {
+      border-radius: 5px;
+      width: 50%;
+      font-size: 20px;
+      padding: 8px;
+      border: 1px solid #42ffef;
+      background-color: #42ffef;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3), -5px 5px 10px rgba(0, 0, 0, 0.3); }
 
 /*# sourceMappingURL=main.css.map */

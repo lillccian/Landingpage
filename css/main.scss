@@ -17,18 +17,25 @@ $down-shadow: 5px 5px 10px rgba(0,0,0,.3),-5px 5px 10px rgba(0,0,0,.3);
 		background: linear-gradient(180deg,rgba(0,0,0,0),rgba(52,53,84,.6));
 		nav{
 			font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+			position: relative;
+			height: 10vh;
 			#logo{
-				margin: 40px 0;
+				position: absolute;
+				top: 50%;
+				left: 0;
+				transform: translateY(-50%);
 				font-size: 25px;
 				float: left;
 				text-shadow: $down-shadow;
 				color: $hover-color;
 			}
 			.navs {
-				float: right;
+				right: 0;
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
 				li{
 					font-size: 15px;
-					margin: 40px 20px 40px 0;
 					padding: 10px 15px;
 					display: inline-block;
 					text-shadow: $shadow;
@@ -45,26 +52,32 @@ $down-shadow: 5px 5px 10px rgba(0,0,0,.3),-5px 5px 10px rgba(0,0,0,.3);
 			}
 		}
 		.phone-view{
-			height: 700px;
+			height: 75vh;
 			position: relative;
 			.iphone{
-				position: absolute;
 				width: 100%;
 				height: 100%;
-				top: 0;
-				background-image: url('../img/iphone-black.png');
-				background-repeat: no-repeat;
-				background-size: 22% auto;
-				background-position: center center;
-				img{
-					width: 225px;
-					height: 395px;
+				.youtube{
 					position: absolute;
-					display: inline;
 					top: 50%;
 					left: 50%;
+					width: 30vh;
+					height: 63vh;
+					background-image: url('../img/iphone-black.png');
+					background-repeat: no-repeat;
+					background-size: 100% auto;
+					background-position: center center;
 					transform: translate(-50%,-50%);
+					img{
+						position: absolute;
+						width: 88%;
+						height: 74%;
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%,-50%);
+					}
 				}
+
 			}
 			.title{
 				position: absolute;
@@ -72,25 +85,26 @@ $down-shadow: 5px 5px 10px rgba(0,0,0,.3),-5px 5px 10px rgba(0,0,0,.3);
 				left: 50%;
 				transform: translate(-50%,-50%);
 				width: 100%;
+				text-align: center;
 				h1{
 					font-size: 80px;
-					font-weight: bold;
+					// font-weight: bold;
 					color: $main-color;
 					text-shadow: $down-shadow;
 				}
 			}
 		}
 		.learn-more{
+			height: 15vh;
 			text-align: center;
 			p{
-				display: inline;
 				padding: 10px 30px;			
-				width: 200px;
 				font-size: 30px;
 				border: 4px solid #FFF;
 				border-radius: 25px;
-				color: #FFF;
+				color: $main-color;
 				letter-spacing:5px;
+				display: inline-block;
 				&:hover{
 					color: $hover-color;
 					border-color: $hover-color;
@@ -105,12 +119,19 @@ $down-shadow: 5px 5px 10px rgba(0,0,0,.3),-5px 5px 10px rgba(0,0,0,.3);
 	width: 100vw;
 	height: 100vh;
 	background-color: $deep-color;
+	#map{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
 	.iphone-gps{
 		position: absolute;
 		bottom: 6%;
 		left: 9%;
-		width: 250px;
-		height: 525px;
+		width: 25vh;
+		height: 52.5vh;
 		background-image: url('../img/iphone.png');
 		background-repeat: no-repeat;
 		background-size: 100% auto;
@@ -128,8 +149,8 @@ $down-shadow: 5px 5px 10px rgba(0,0,0,.3),-5px 5px 10px rgba(0,0,0,.3);
 		position: absolute;
 		bottom: 5%;
 		left: 20%;
-		width: 300px;
-		height: 630px;
+		width: 30vh;
+		height: 63vh;
 		background-image: url('../img/iphone.png');
 		background-repeat: no-repeat;
 		background-size: 100% auto;
@@ -140,7 +161,7 @@ $down-shadow: 5px 5px 10px rgba(0,0,0,.3),-5px 5px 10px rgba(0,0,0,.3);
 			left: 50%;
 			width: 88%;
 			height: 74%;
-			transform: translate(-50%,-50%)
+			transform: translate(-50%,-50%);
 		}
 	}
 	.text{
@@ -156,7 +177,7 @@ $down-shadow: 5px 5px 10px rgba(0,0,0,.3),-5px 5px 10px rgba(0,0,0,.3);
 			h1{
 				font-weight: bold;
 				font-size: 80px;
-				padding: 100px;
+				padding: 100px 0 10px 0;
 			}
 		}
 		.slogan{
@@ -167,6 +188,7 @@ $down-shadow: 5px 5px 10px rgba(0,0,0,.3),-5px 5px 10px rgba(0,0,0,.3);
 		.tag{
 			font-size: 30px;
 			padding: 10px 0;
+			color: $hover-color;
 		}
 	}
 }
@@ -184,7 +206,7 @@ $down-shadow: 5px 5px 10px rgba(0,0,0,.3),-5px 5px 10px rgba(0,0,0,.3);
 			h1{
 				font-weight: bold;
 				font-size: 80px;
-				padding: 100px;
+				padding: 100px 0 10px 0;
 			}
 		}
 		.slogan{
@@ -195,6 +217,108 @@ $down-shadow: 5px 5px 10px rgba(0,0,0,.3),-5px 5px 10px rgba(0,0,0,.3);
 		.tag{
 			font-size: 30px;
 			padding: 10px 0;
+			color: $hover-color;
+		}
+	}
+}
+.marathons{
+  background-color: rgba(0,0,0,.9);
+  background-image: url('../img/map.png');
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: center 60%;
+	width: 100vw;
+	height: 110vh;
+	.title{
+		text-align: center;
+		color: $main-color;
+		text-shadow: $down-shadow;
+		h1{
+			font-weight: bold;
+			font-size: 80px;
+			padding: 100px 0 50px 0;
+		}
+	}
+	.photos{
+		padding: 0;
+		.marathon{
+			margin: 10px 0;
+			position: relative;
+			img{
+				width: 100%;
+				height: 100%;
+			}
+			.cover{
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(52,53,84,.6);
+				opacity: 0;
+				h3{
+					margin: 0;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%,-50%);
+					font-size: 40px;
+					color: $hover-color;
+				}
+				&:hover{
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+.contact{
+  background-image: url('../img/join.jpg');
+  .bg{
+		width: 100vw;
+		height: 90vh;
+  	background-color: rgba(0,0,0,.4);	
+  }
+	.title{
+		text-align: center;
+		color: $main-color;
+		text-shadow: $down-shadow;
+		h1{
+			font-weight: bold;
+			font-size: 80px;
+			padding: 100px 0 20px 0;
+		}
+		p{
+			font-size: 30px;
+			padding: 20px 0;
+			color: $hover-color;
+		}
+	}
+	.action{
+		margin: 10px;
+		padding: 12px 20px;
+		text-align: center;
+		input{
+			text-align: center;
+			color: #000000 ;
+			//input fisrt space
+			text-indent:5px;
+			background: #FFFFFF ;
+			font-size: 20px;
+			padding: 8px;
+			width: 50%;
+			background-color: #FFFFFF ;
+			box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset,$shadow;
+			margin: 0 auto 30px;
+		}
+		.signupButton{
+			border-radius: 5px;
+			width: 50%;
+			font-size: 20px;
+			padding: 8px;
+			border: 1px solid $hover-color;
+			background-color: $hover-color;
+			box-shadow: $down-shadow;
 		}
 	}
 }
