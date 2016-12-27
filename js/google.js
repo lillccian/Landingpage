@@ -1,4 +1,7 @@
 function initMap() {
+
+  // map style
+
   var styleArray = [
     {
       elementType: "geometry",
@@ -12,6 +15,9 @@ function initMap() {
       stylers: [{"color": "#787996"}]
     }
   ];
+
+  // set map start
+
   var map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: 25.052532, lng: 121.533171},
     mapTypeControl: false,
@@ -20,35 +26,41 @@ function initMap() {
     zoom: 18,
     styles: styleArray
   });
+
+  // set market img
+
   var image = {
     url: 'img/logo.png',
     };
-  var infoWindow = new google.maps.InfoWindow({map: map});
-  // Try HTML5 geolocation.
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(function(position) {
-      var pos = {
-        lat: position.coords.latitude,
-        lng: position.coords.longitude
-      };
-      marker = new google.maps.Marker({
-        map: map,
-        icon: image,
-        draggable: true,
-        animation: google.maps.Animation.DROP,
-        position: pos
-      });
-      marker.addListener('click', toggleBounce);
-      // infoWindow.setPosition(pos);
-      // infoWindow.setContent('Location found.');
-      map.setCenter(pos);
-    }, function() {
-      handleLocationError(true, infoWindow, map.getCenter());
-    });
-  } else {
-    // Browser doesn't support Geolocation
-    handleLocationError(false, infoWindow, map.getCenter());
-  }
+
+  // find local gps and market it
+
+  // var infoWindow = new google.maps.InfoWindow({map: map});
+  // // Try HTML5 geolocation.
+  // if (navigator.geolocation) {
+  //   navigator.geolocation.getCurrentPosition(function(position) {
+  //     var pos = {
+  //       lat: position.coords.latitude,
+  //       lng: position.coords.longitude
+  //     };
+  //     marker = new google.maps.Marker({
+  //       map: map,
+  //       icon: image,
+  //       draggable: true,
+  //       animation: google.maps.Animation.DROP,
+  //       position: pos
+  //     });
+  //     marker.addListener('click', toggleBounce);
+  //     // infoWindow.setPosition(pos);
+  //     // infoWindow.setContent('Location found.');
+  //     map.setCenter(pos);
+  //   }, function() {
+  //     handleLocationError(true, infoWindow, map.getCenter());
+  //   });
+  // } else {
+  //   // Browser doesn't support Geolocation
+  //   handleLocationError(false, infoWindow, map.getCenter());
+  // }
 
 
   // gps
@@ -82,8 +94,6 @@ function initMap() {
         zoomControl: false
       });
   map.setStreetView(panorama);
-
-
 
   // var gps = new google.maps.Map(document.getElementById('gps'), {
   //   center: {lat: 35.6585957, lng: 139.7451379},
