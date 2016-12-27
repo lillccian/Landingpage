@@ -159,6 +159,7 @@
 
 .beats {
   background-image: url("../img/running.jpg");
+  background-repeat: no-repeat;
   background-size: 130% auto; }
   .beats .beats-bg {
     width: 100vw;

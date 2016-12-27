@@ -194,6 +194,7 @@ $down-shadow: 5px 5px 10px rgba(0,0,0,.3),-5px 5px 10px rgba(0,0,0,.3);
 }
 .beats{
 	background-image: url('../img/running.jpg');
+	background-repeat: no-repeat;
 	background-size: 130% auto;
 	.beats-bg{
 		width: 100vw;
