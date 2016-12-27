@@ -102,14 +102,14 @@
       height: 100%;
       background-image: url("../img/iphone.png");
       background-repeat: no-repeat;
-      background-size: 30% auto;
-      background-position: 20% center; }
+      background-size: 25% auto;
+      background-position: 28% 85%; }
       .map .iphone-view .iphone-gps #gps {
         position: absolute;
-        top: 50%;
-        left: 29%;
-        width: 26.3%;
-        height: 45.8%;
+        top: 67.1%;
+        left: 33.55%;
+        width: 21.8%;
+        height: 37.7%;
         transform: translate(-50%, -50%); }
     .map .iphone-view .iphone-stvw {
       top: 0;
@@ -118,15 +118,14 @@
       height: 100%;
       background-image: url("../img/iphone.png");
       background-repeat: no-repeat;
-      background-size: 35% auto;
-      background-position: 60% center; }
+      background-size: 30% auto;
+      background-position: 60% 90%; }
       .map .iphone-view .iphone-stvw #stvw {
         position: absolute;
-        top: 50%;
-        left: 56.5%;
-        width: 31%;
-        height: 53.5%;
-        transform: translate(-50%, -50%); }
+        top: 42.7%;
+        left: 43.9%;
+        width: 26.2%;
+        height: 45.5%; }
   .map .text {
     position: absolute;
     top: 0;
