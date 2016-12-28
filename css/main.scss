@@ -4,7 +4,7 @@ $deep-color: #343554;
 $shadow: 0px 2px 5px rgba(0,0,0,.3);
 $up-shadow: 5px -5px 10px rgba(0,0,0,.3),-5px -5px 10px rgba(0,0,0,.3);
 $down-shadow: 5px 5px 10px rgba(0,0,0,.3),-5px 5px 10px rgba(0,0,0,.3);
-// 黑體字型
+// 
 @import url(http://fonts.googleapis.com/earlyaccess/cwtexhei.css);
 
 .intro{
@@ -183,15 +183,30 @@ $down-shadow: 5px 5px 10px rgba(0,0,0,.3),-5px 5px 10px rgba(0,0,0,.3);
 				padding: 100px 0 10px 0;
 			}
 		}
-		.slogan{
-			font-family: 'cwTeXHei', sans-serif;
-			font-size: 50px;
-			padding: 150px 0 0 0 ;
-		}
-		.tag{
-			font-size: 30px;
-			padding: 10px 0;
-			color: $hover-color;
+		.word{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			.col-lg-4{
+				height: 100vh;
+				.introduce{
+					position: absolute;
+					top: 50%;
+					transform: translateY(-50%);
+					.slogan{
+						font-family: 'cwTeXHei', sans-serif;
+						font-size: 50px;
+						padding: 0;
+					}
+					.tag{
+						font-size: 30px;
+						padding: 10px 0;
+						color: $hover-color;
+					}
+				}
+			}
 		}
 	}
 }
@@ -200,6 +215,7 @@ $down-shadow: 5px 5px 10px rgba(0,0,0,.3),-5px 5px 10px rgba(0,0,0,.3);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+	position: relative;
 	.beats-bg{
 		width: 100vw;
 		height: 100vh;
@@ -214,15 +230,30 @@ $down-shadow: 5px 5px 10px rgba(0,0,0,.3),-5px 5px 10px rgba(0,0,0,.3);
 				padding: 100px 0 10px 0;
 			}
 		}
-		.slogan{
-			font-family: 'cwTeXHei', sans-serif;
-			font-size: 50px;
-			padding: 150px 0 0 0 ;
-		}
-		.tag{
-			font-size: 30px;
-			padding: 10px 0;
-			color: $hover-color;
+		.word{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			.col-lg-4{
+				height: 100vh;
+				.introduce{
+					position: absolute;
+					top: 50%;
+					transform: translateY(-50%);
+					.slogan{
+						font-family: 'cwTeXHei', sans-serif;
+						font-size: 50px;
+						padding: 0;
+					}
+					.tag{
+						font-size: 30px;
+						padding: 10px 0;
+						color: $hover-color;
+					}
+				}
+			}
 		}
 	}
 }

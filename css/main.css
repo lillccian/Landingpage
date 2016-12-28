@@ -151,20 +151,33 @@
         font-family: 'cwTeXHei', sans-serif;
         font-size: 80px;
         padding: 100px 0 10px 0; }
-    .everywhere .text .slogan {
-      font-family: 'cwTeXHei', sans-serif;
-      font-size: 50px;
-      padding: 150px 0 0 0; }
-    .everywhere .text .tag {
-      font-size: 30px;
-      padding: 10px 0;
-      color: #42ffef; }
+    .everywhere .text .word {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+      .everywhere .text .word .col-lg-4 {
+        height: 100vh; }
+        .everywhere .text .word .col-lg-4 .introduce {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%); }
+          .everywhere .text .word .col-lg-4 .introduce .slogan {
+            font-family: 'cwTeXHei', sans-serif;
+            font-size: 50px;
+            padding: 0; }
+          .everywhere .text .word .col-lg-4 .introduce .tag {
+            font-size: 30px;
+            padding: 10px 0;
+            color: #42ffef; }
 
 .beats {
   background-image: url("../img/running.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  position: relative; }
   .beats .beats-bg {
     width: 100vw;
     height: 100vh;
@@ -177,14 +190,26 @@
         font-family: 'cwTeXHei', sans-serif;
         font-size: 80px;
         padding: 100px 0 10px 0; }
-    .beats .beats-bg .slogan {
-      font-family: 'cwTeXHei', sans-serif;
-      font-size: 50px;
-      padding: 150px 0 0 0; }
-    .beats .beats-bg .tag {
-      font-size: 30px;
-      padding: 10px 0;
-      color: #42ffef; }
+    .beats .beats-bg .word {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+      .beats .beats-bg .word .col-lg-4 {
+        height: 100vh; }
+        .beats .beats-bg .word .col-lg-4 .introduce {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%); }
+          .beats .beats-bg .word .col-lg-4 .introduce .slogan {
+            font-family: 'cwTeXHei', sans-serif;
+            font-size: 50px;
+            padding: 0; }
+          .beats .beats-bg .word .col-lg-4 .introduce .tag {
+            font-size: 30px;
+            padding: 10px 0;
+            color: #42ffef; }
 
 .marathons {
   background-color: rgba(0, 0, 0, 0.9);
