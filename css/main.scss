@@ -9,7 +9,8 @@ $down-shadow: 5px 5px 10px rgba(0,0,0,.3),-5px 5px 10px rgba(0,0,0,.3);
 .intro{
 	background-image: url('../img/man-running.jpg');
 	background-repeat: no-repeat;
-	background-size: 100% auto;
+	background-size: cover;
+	background-position: center;
 	height: 100vh;
 	position: relative;		
 	.intro-bg{
@@ -195,7 +196,8 @@ $down-shadow: 5px 5px 10px rgba(0,0,0,.3),-5px 5px 10px rgba(0,0,0,.3);
 .beats{
 	background-image: url('../img/running.jpg');
 	background-repeat: no-repeat;
-	background-size: 130% auto;
+	background-size: cover;
+	background-position: center;
 	.beats-bg{
 		width: 100vw;
 		height: 100vh;
@@ -226,7 +228,7 @@ $down-shadow: 5px 5px 10px rgba(0,0,0,.3),-5px 5px 10px rgba(0,0,0,.3);
   background-color: rgba(0,0,0,.9);
   background-image: url('../img/map.png');
 	background-repeat: no-repeat;
-	background-size: 100% auto;
+	background-size: cover;
 	background-position: center 60%;
 	width: 100vw;
 	height: 110vh;
@@ -275,6 +277,8 @@ $down-shadow: 5px 5px 10px rgba(0,0,0,.3),-5px 5px 10px rgba(0,0,0,.3);
 }
 .contact{
   background-image: url('../img/join.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   .bg{
 		width: 100vw;
 		height: 90vh;
@@ -323,3 +327,4 @@ $down-shadow: 5px 5px 10px rgba(0,0,0,.3),-5px 5px 10px rgba(0,0,0,.3);
 		}
 	}
 }
+

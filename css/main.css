@@ -1,7 +1,8 @@
 .intro {
   background-image: url("../img/man-running.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
+  background-position: center;
   height: 100vh;
   position: relative; }
   .intro .intro-bg {
@@ -160,7 +161,8 @@
 .beats {
   background-image: url("../img/running.jpg");
   background-repeat: no-repeat;
-  background-size: 130% auto; }
+  background-size: cover;
+  background-position: center; }
   .beats .beats-bg {
     width: 100vw;
     height: 100vh;
@@ -186,7 +188,7 @@
   background-color: rgba(0, 0, 0, 0.9);
   background-image: url("../img/map.png");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   background-position: center 60%;
   width: 100vw;
   height: 110vh; }
@@ -226,7 +228,9 @@
           opacity: 1; }
 
 .contact {
-  background-image: url("../img/join.jpg"); }
+  background-image: url("../img/join.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
   .contact .bg {
     width: 100vw;
     height: 90vh;
