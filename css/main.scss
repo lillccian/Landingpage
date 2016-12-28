@@ -27,7 +27,6 @@ $down-shadow: 5px 5px 10px rgba(0,0,0,.3),-5px 5px 10px rgba(0,0,0,.3);
 				left: 0;
 				transform: translateY(-50%);
 				font-size: 25px;
-				float: left;
 				text-shadow: $down-shadow;
 				color: $hover-color;
 			}
@@ -360,4 +359,35 @@ $down-shadow: 5px 5px 10px rgba(0,0,0,.3),-5px 5px 10px rgba(0,0,0,.3);
 		}
 	}
 }
-
+@media (max-width: 450px) {
+	.intro{
+		.nav{
+			#logo{
+				left: 50%;
+			}
+			.navs{
+				display: none;	
+			}
+		}
+	}
+	.everywhere{
+		.iphone-stvw{
+			left: 0;
+			width: 100vw;
+			height: 100vh;
+			#stvw{
+				width: 100vw;
+				height: 100vh;
+			}
+		}
+	}
+	.beats{
+		display: none;
+	}
+	.map{
+		display: none;
+	}
+	.contact{
+		display: none;
+	}
+}
