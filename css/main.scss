@@ -17,7 +17,7 @@ $down-shadow: 5px 5px 10px rgba(0,0,0,.3),-5px 5px 10px rgba(0,0,0,.3);
 	position: relative;		
 	.intro-bg{
 		height: 100vh;
-		background: rgba(0,0,0,.2);
+		background: rgba(0,0,0,.3);
 		nav{
 			font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 			position: relative;
@@ -114,12 +114,18 @@ $down-shadow: 5px 5px 10px rgba(0,0,0,.3),-5px 5px 10px rgba(0,0,0,.3);
 
 #introduce{
 	box-shadow: $up-shadow,$down-shadow;
-	height: 60vh;
+	height: 50vh;
 	text-align: center;
-	h1{
-		font-family: 'cwTeXHei', sans-serif;
-		padding: 120px 0 10px;
-		font-size: 60px;
+	position: relative;
+	.word{
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		position: absolute;
+		h1{
+			font-family: 'cwTeXHei', sans-serif;
+			font-size: 60px;
+		}
 	}
 }
 
@@ -178,7 +184,7 @@ $down-shadow: 5px 5px 10px rgba(0,0,0,.3),-5px 5px 10px rgba(0,0,0,.3);
 		top: 0;
 		width: 100%;
 		height: 100%;
-		background: radial-gradient(circle,rgba(52,53,84,.1),rgba(24,25,40,.7),rgba(24,25,40,.7));
+		background: radial-gradient(circle,rgba(153,153,153,.1),rgba(45,45,45,.5),rgba(45,45,45,.7));
 		color: $main-color;
 		text-shadow: $down-shadow;
 		.title{
@@ -233,7 +239,7 @@ $down-shadow: 5px 5px 10px rgba(0,0,0,.3),-5px 5px 10px rgba(0,0,0,.3);
 			text-align: center;
 			h1{
 				font-family: 'cwTeXHei', sans-serif;
-				font-size: 80px;
+				font-size: 60px;
 				padding: 100px 0 10px 0;
 			}
 		}
@@ -265,20 +271,20 @@ $down-shadow: 5px 5px 10px rgba(0,0,0,.3),-5px 5px 10px rgba(0,0,0,.3);
 	}
 }
 #marathons{
-  background-color: rgba(0,0,0,.9);
+  background-color: $deep-color;
   background-image: url('../img/map.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center 60%;
 	width: 100vw;
-	height: 110vh;
+	height: 100vh;
 	.title{
 		text-align: center;
 		color: $main-color;
 		text-shadow: $down-shadow;
 		h1{
 			font-family: 'cwTeXHei', sans-serif;
-			font-size: 80px;
+			font-size: 60px;
 			padding: 100px 0 50px 0;
 		}
 	}
@@ -297,7 +303,7 @@ $down-shadow: 5px 5px 10px rgba(0,0,0,.3),-5px 5px 10px rgba(0,0,0,.3);
 				left: 0;
 				width: 100%;
 				height: 100%;
-				background-color: rgba(52,53,84,.6);
+				background-color: rgba(19,242,144,.6);
 				opacity: 0;
 				h3{
 					margin: 0;
@@ -306,7 +312,7 @@ $down-shadow: 5px 5px 10px rgba(0,0,0,.3),-5px 5px 10px rgba(0,0,0,.3);
 					left: 50%;
 					transform: translate(-50%,-50%);
 					font-size: 40px;
-					color: $hover-color;
+					color: $main-color;
 				}
 				&:hover{
 					opacity: 1;
@@ -330,7 +336,7 @@ $down-shadow: 5px 5px 10px rgba(0,0,0,.3),-5px 5px 10px rgba(0,0,0,.3);
 		text-shadow: $down-shadow;
 		h1{
 			font-family: 'cwTeXHei', sans-serif;
-			font-size: 80px;
+			font-size: 60px;
 			padding: 100px 0 20px 0;
 		}
 		p{
@@ -368,35 +374,35 @@ $down-shadow: 5px 5px 10px rgba(0,0,0,.3),-5px 5px 10px rgba(0,0,0,.3);
 	}
 }
 @media (max-width: 450px) {
-	// #intro{
-	// 	display: none;
-	// 	.nav{
-	// 		#logo{
-	// 			left: 50%;
-	// 		}
-	// 		.navs{
-	// 			display: none;	
-	// 		}
-	// 	}
-	// }
-	// #everywhere{
-	// 	.iphone-stvw{
-	// 		left: 0;
-	// 		width: 100vw;
-	// 		height: 100vh;
-	// 		#stvw{
-	// 			width: 100vw;
-	// 			height: 100vh;
-	// 		}
-	// 	}
-	// }
-	// #beats{
-	// 	display: none;
-	// }
-	// #marathons{
-	// 	display: none;
-	// }
-	// #contact{
-	// 	display: none;
-	// }
+	#intro{
+		display: none;
+		.nav{
+			#logo{
+				left: 50%;
+			}
+			.navs{
+				display: none;	
+			}
+		}
+	}
+	#everywhere{
+		.iphone-stvw{
+			left: 0;
+			width: 100vw;
+			height: 100vh;
+			#stvw{
+				width: 100vw;
+				height: 100vh;
+			}
+		}
+	}
+	#beats{
+		display: none;
+	}
+	#marathons{
+		display: none;
+	}
+	#contact{
+		display: none;
+	}
 }
