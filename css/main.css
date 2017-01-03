@@ -310,8 +310,6 @@
 @media (max-width: 450px) {
   #intro {
     display: none; }
-    #intro .nav #logo {
-      left: 50%; }
     #intro .nav .navs {
       display: none; }
 

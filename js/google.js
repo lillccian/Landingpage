@@ -62,9 +62,9 @@ function initMap() {
   //   handleLocationError(false, infoWindow, map.getCenter());
   // }
 
-
+ 
   // gps
-  var fenway = {lat: 35.655335, lng: 139.7456987};
+  var fenway = {lat: 34.669139, lng: 135.501333};
   var gps = new google.maps.Map(document.getElementById('gps'), {
     center: fenway,
     mapTypeControl: false,
