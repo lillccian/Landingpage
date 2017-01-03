@@ -83,8 +83,8 @@ function initMap() {
       document.getElementById('stvw'), {
         position: fenway,
         pov: {
-          heading: 0,
-          pitch: 8,
+          heading: 220,
+          pitch: 10,
         },
         fullScreenControl: false,
         linksControl: false,
